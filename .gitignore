@@ -1,0 +1,58 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ===== Node / Vite =====
+node_modules/
+dist/
+.vite/
+*.map
+
+# ===== ESP32 / Arduino 编译产物 =====
+build/
+backup/
+.pio/
+*.bin
+*.elf
+*.bootloader.bin
+*.merged.bin
+flash_before_*.bin
+sketch/
+
+# ===== 密钥与本地配置 =====
+.env
+.env.local
+.env.*.local
+secrets.h
+secrets.ini
+config.local.h
+!backend/.env.example
+!**/.env.example
+
+# ===== 数据库 =====
+*.db
+*.db.bak
+*.db.bak2
+*.db.bak3
+*.sqlite
+*.sqlite3
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 系统 / 编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 文档原件（非代码，按需自行加入） =====
+*.docx
+*.pdf

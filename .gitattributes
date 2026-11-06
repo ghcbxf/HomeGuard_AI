@@ -1,0 +1,28 @@
+# 统一换行符：仓库内一律 LF，避免跨平台 diff 噪音
+* text=auto eol=lf
+
+# Windows 脚本保留 CRLF，保证双击可直接执行
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+*.cmd  text eol=crlf
+
+# 明确文本类型
+*.md    text
+*.py    text
+*.ino   text
+*.h     text
+*.cpp   text
+*.vue   text
+*.js    text
+*.css   text
+*.json  text
+*.yml   text
+*.yaml  text
+*.ini   text
+*.txt   text
+
+# 二进制（本仓库原则上不提交，兜底声明）
+*.bin   binary
+*.png   binary
+*.jpg   binary
+*.docx  binary
